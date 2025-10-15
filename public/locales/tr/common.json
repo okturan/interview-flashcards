@@ -1,0 +1,54 @@
+{
+  "app": {
+    "name": "JavaMaster",
+    "tagline": "Java Mülakatlarında Başarılı Ol"
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "study": "Çalış",
+    "progress": "İlerleme",
+    "settings": "Ayarlar"
+  },
+  "buttons": {
+    "start": "Başla",
+    "continue": "Devam Et",
+    "next": "Sonraki",
+    "previous": "Önceki",
+    "submit": "Gönder",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "close": "Kapat",
+    "back": "Geri",
+    "backToDashboard": "Ana Sayfaya Dön",
+    "endSession": "Oturumu Bitir"
+  },
+  "labels": {
+    "loading": "Yükleniyor...",
+    "loadingTranslations": "Çeviriler yükleniyor...",
+    "loadingApp": "Mülakat hazırlığınız yükleniyor...",
+    "noData": "Veri bulunamadı",
+    "error": "Bir hata oluştu",
+    "or": "veya",
+    "cards": "{{count}} kart",
+    "cards_other": "{{count}} kart",
+    "estimatedTime": "~{{minutes}}dk",
+    "selectTopic": "Bir Konu Seçin"
+  },
+  "accessibility": {
+    "changeLanguage": "Dili değiştir"
+  },
+  "difficulty": {
+    "junior": "Başlangıç",
+    "mid": "Orta",
+    "senior": "İleri"
+  },
+  "time": {
+    "minute": "{{count}} dakika",
+    "minute_other": "{{count}} dakika",
+    "hour": "{{count}} saat",
+    "hour_other": "{{count}} saat",
+    "day": "{{count}} gün",
+    "day_other": "{{count}} gün",
+    "approximately": "~{{time}}dk"
+  }
+}

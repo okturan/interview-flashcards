@@ -1,0 +1,20 @@
+{
+  "basics": "Java Temelleri",
+  "oop": "Nesne Yönelimli Programlama",
+  "collections": "Koleksiyonlar",
+  "concurrency": "Eşzamanlılık",
+  "jvm": "JVM İç Yapısı",
+  "streams": "Streams API",
+  "exception_handling": "Hata Yönetimi",
+  "design_patterns": "Tasarım Desenleri",
+  "spring": "Spring Framework",
+  "testing": "Test",
+  "generics": "Jenerikler",
+  "java8": "Java 8+ Özellikleri",
+  "io": "I/O ve Serileştirme",
+  "string": "String İşlemleri",
+  "arrays": "Diziler",
+  "wrapper": "Sarmalayıcı Sınıflar",
+  "access": "Erişim Belirleyiciler",
+  "constructor": "Yapıcı Metotlar"
+}

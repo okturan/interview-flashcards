@@ -1,0 +1,102 @@
+{
+  "welcome": {
+    "title": "Hoş geldin! 👋",
+    "subtitle": "Java bilgini geliştirmeye hazır mısın?"
+  },
+  "stats": {
+    "streak": {
+      "label": "Günlük Seri",
+      "best": "En İyi: {{count}}"
+    },
+    "level": {
+      "label": "Seviye {{level}}",
+      "totalXP": "Toplam XP: {{xp}}",
+      "nextLevel": "Seviye {{level}} için {{xp}} XP"
+    },
+    "cardsDue": {
+      "label": "Bekleyen Kartlar",
+      "new": "{{count}} yeni kart",
+      "new_other": "{{count}} yeni kart"
+    },
+    "achievements": {
+      "label": "Başarımlar",
+      "reviewed": "{{count}} kart gözden geçirildi",
+      "reviewed_other": "{{count}} kart gözden geçirildi"
+    }
+  },
+  "dailyGoal": {
+    "title": "Günlük Hedef",
+    "progress": "Bugün {{current}} / {{goal}} kart gözden geçirildi"
+  },
+  "buttons": {
+    "browseCards": "Kartlara Göz At"
+  },
+  "sessions": {
+    "title": "Oturum Başlat",
+    "quick5": {
+      "name": "Hızlı 5",
+      "description": "~2 dakikada 5 kart"
+    },
+    "juniorLevel": {
+      "name": "Junior Seviye",
+      "description": "Başlangıç seviyesi sorular"
+    },
+    "midLevel": {
+      "name": "Orta Seviye",
+      "description": "Orta düzey kavramlar"
+    },
+    "seniorLevel": {
+      "name": "Senior Seviye",
+      "description": "İleri düzey konular"
+    },
+    "deepDive": {
+      "name": "Derinlemesine",
+      "description": "15-20 kart, konu odaklı"
+    },
+    "weakSpot": {
+      "name": "Zayıf Noktalar",
+      "description": "Zayıf alanlardan 10 kart"
+    },
+    "interview": {
+      "name": "Mülakat Modu",
+      "description": "Karışık zorluk, zamanlı"
+    },
+    "random": {
+      "name": "Rastgele Blitz",
+      "description": "Genel bilgini test et"
+    }
+  },
+  "topicMastery": {
+    "title": "Konu Hakimiyeti"
+  },
+  "spacedRepetition": {
+    "title": "Aralıklı Tekrar İçgörüleri",
+    "stats": {
+      "newCards": "Yeni Kartlar",
+      "overdue": "Gecikmiş",
+      "lowConfidence": "Düşük Güven",
+      "lapses": "Geri Düşmeler"
+    },
+    "messages": {
+      "allCaughtUp": "Hepsi tamam! Gözden geçirilecek kart yok. 🎉",
+      "cardsDue": "Hafızayı maksimize etmek için gözden geçirilmeye hazır {{count}} kartınız var.",
+      "checkBackLater": "Daha fazla kart için daha sonra tekrar kontrol edin."
+    },
+    "sections": {
+      "mostOverdue": "En Gecikmiş Kartlar",
+      "lowConfidence": "Düşük Güven Kartları (Daha Fazla Pratik Gerekli)",
+      "lapses": "Tekrar Gözden Geçirilmesi Gereken Kartlar (Geri Düşmeler)",
+      "lapsesDescription": "Bu kartlar daha önce biliniyor/ustalaşılmış olarak işaretlenmişti ancak daha düşük güven seviyelerine geri düştü.",
+      "allCaughtUpTitle": "Hepsi tamam!",
+      "hoursOverdue": "{{hours}} saat gecikmiş",
+      "daysOverdue": "{{days}} gün gecikmiş",
+      "reviewed": "{{count}} kez gözden geçirildi",
+      "lapse": "geri düşme",
+      "lapse_other": "geri düşme"
+    },
+    "explanation": {
+      "title": "Aralıklı Tekrar Nasıl Çalışır",
+      "description": "Uygulama, gözden geçirmeleri optimal aralıklarla planlamak için değiştirilmiş bir SuperMemo SM-2 algoritması kullanır. \"Ustalaşıldı\" olarak işaretlediğiniz kartlar daha az sıklıkta, \"Hiçbir Fikrim Yok\" olarak işaretlediğiniz kartlar ise daha sık görünür. Bu, çalışma süresini minimize ederken uzun vadeli hafızayı maksimize eder."
+    }
+  }
+}

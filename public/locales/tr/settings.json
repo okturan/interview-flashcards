@@ -1,0 +1,45 @@
+{
+  "header": {
+    "title": "Ayarlar",
+    "subtitle": "Verilerinizi ve tercihlerinizi yönetin"
+  },
+  "dataManagement": {
+    "title": "Veri Yönetimi",
+    "export": {
+      "title": "Verilerinizi Dışa Aktarın",
+      "description": "Kart incelemeleri, oturumlar, başarımlar ve istatistikler dahil tüm ilerlemenizin yedeğini indirin.",
+      "button": "Verileri Dışa Aktar",
+      "buttonLoading": "Dışa Aktarılıyor...",
+      "successMessage": "Dışa aktarma başarılı! Dosya indirildi.",
+      "errorMessage": "Dışa aktarma başarısız. Lütfen tekrar deneyin.",
+      "preparingMessage": "Dışa aktarma hazırlanıyor..."
+    },
+    "import": {
+      "title": "Veri İçe Aktar",
+      "description": "Önceden dışa aktarılmış bir yedekleme dosyasından ilerlemenizi geri yükleyin. Bu, mevcut verilerinizle birleştirilecektir.",
+      "button": "Verileri İçe Aktar",
+      "buttonLoading": "İçe Aktarılıyor...",
+      "readingMessage": "Dosya okunuyor...",
+      "restoringMessage": "Veriler geri yükleniyor...",
+      "successMessage": "İçe aktarma başarılı! {{cards}} kart ve {{sessions}} oturum geri yüklendi.",
+      "errorMessage": "İçe aktarma başarısız: {{error}}",
+      "invalidFileError": "Geçersiz yedekleme dosyası formatı"
+    },
+    "delete": {
+      "title": "Tehlikeli Bölge",
+      "description": "Tüm ilerlemenizi kalıcı olarak silin ve sıfırdan başlayın. Bu işlem geri alınamaz.",
+      "button": "Tüm Verileri Sil",
+      "confirmTitle": "Kesinlikle emin misiniz? Bu, tüm ilerlemenizi kalıcı olarak silecektir!",
+      "confirmButton": "Evet, Her Şeyi Sil",
+      "cancelButton": "İptal",
+      "errorMessage": "Veri silme başarısız. Lütfen tekrar deneyin."
+    }
+  },
+  "statistics": {
+    "title": "Mevcut İstatistikler",
+    "totalXP": "Toplam XP",
+    "dayStreak": "Günlük Seri",
+    "achievements": "Başarımlar",
+    "cardsReviewed": "Gözden Geçirilen Kartlar"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "header": {
+    "title": "Çalışma Oturumu",
+    "remaining": "{{count}} kart kaldı",
+    "remaining_other": "{{count}} kart kaldı",
+    "endSession": "Oturumu Bitir"
+  },
+  "instructions": {
+    "flipCard": "Kartı çevirmek için Space tuşuna bas"
+  },
+  "confidence": {
+    "question": "Bunu ne kadar iyi biliyordun?",
+    "levels": {
+      "unknown": {
+        "label": "Hiç Bilmiyorum",
+        "nextReview": "10 dakika"
+      },
+      "partial": {
+        "label": "Kısmen",
+        "nextReview": "1 gün"
+      },
+      "known": {
+        "label": "Anladım",
+        "nextReview": "3 gün"
+      },
+      "mastered": {
+        "label": "Ustalaştım",
+        "nextReview": "7+ gün"
+      }
+    },
+    "tip": "💡 İpucu: Daha hızlı gözden geçirme için 1-4 klavye kısayollarını kullan"
+  },
+  "flashcard": {
+    "answer": "Cevap",
+    "explanation": "Açıklama",
+    "codeExample": "Kod Örneği",
+    "clickToReveal": "Cevabı görmek için tıkla",
+    "clickToSeeQuestion": "Soruyu görmek için tıkla",
+    "noCard": "Kart mevcut değil"
+  },
+  "completion": {
+    "title": "Oturum Tamamlandı! 🎉",
+    "cardsReviewed": "{{count}} kart gözden geçirdin",
+    "cardsReviewed_other": "{{count}} kart gözden geçirdin",
+    "xpEarned": "Kazanılan XP"
+  }
+}

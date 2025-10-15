@@ -1,0 +1,75 @@
+{
+  "title": "Başarımlar",
+  "unlocked": "Başarım Kazanıldı!",
+  "locked": "Kilitli",
+  "progress": "İlerleme: {{current}}/{{total}}",
+  "categories": {
+    "streak": "Seri",
+    "mastery": "Ustalık",
+    "volume": "Hacim",
+    "accuracy": "Doğruluk",
+    "session": "Oturum"
+  },
+  "list": {
+    "first-steps": {
+      "name": "İlk Adımlar",
+      "description": "25 kartı gözden geçir"
+    },
+    "hundred-club": {
+      "name": "Yüzler Kulübü",
+      "description": "100 kartı gözden geçir"
+    },
+    "thousand-club": {
+      "name": "Binler Kulübü",
+      "description": "1000 kartı gözden geçir"
+    },
+    "dedicated": {
+      "name": "Kararlı",
+      "description": "3 günlük seriyi koru"
+    },
+    "committed": {
+      "name": "Bağlı",
+      "description": "7 günlük seriyi koru"
+    },
+    "unstoppable": {
+      "name": "Durdurulamaz",
+      "description": "14 günlük seriyi koru"
+    },
+    "legend": {
+      "name": "Efsane",
+      "description": "30 günlük seriyi koru"
+    },
+    "sharp-mind": {
+      "name": "Keskin Zihin",
+      "description": "50 kart üzerinde %80 doğruluk"
+    },
+    "perfectionist": {
+      "name": "Mükemmeliyetçi",
+      "description": "100 kart üzerinde %95 doğruluk"
+    },
+    "collections-expert": {
+      "name": "Collections Uzmanı",
+      "description": "Collections'ta %90 hakimiyet"
+    },
+    "concurrency-ninja": {
+      "name": "Eşzamanlılık Ninjası",
+      "description": "Concurrency'de %90 hakimiyet"
+    },
+    "java-master": {
+      "name": "Java Ustası",
+      "description": "Tüm konularda %85 hakimiyet"
+    },
+    "coffee-break-warrior": {
+      "name": "Kahve Molası Savaşçısı",
+      "description": "10 Hızlı 5 oturumunu tamamla"
+    },
+    "deep-thinker": {
+      "name": "Derin Düşünür",
+      "description": "5 Derinlemesine oturumu tamamla"
+    },
+    "interview-ready": {
+      "name": "Mülakatlara Hazır",
+      "description": "Mülakat Modunu %80+ ile tamamla"
+    }
+  }
+}

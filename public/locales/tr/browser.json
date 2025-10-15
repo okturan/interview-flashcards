@@ -1,0 +1,41 @@
+{
+  "title": "Kart Tarayıcı",
+  "subtitle": "Tüm {{count}} kartı arayın ve göz atın",
+  "subtitle_one": "1 kartı arayın ve göz atın",
+  "subtitle_other": "Tüm {{count}} kartı arayın ve göz atın",
+  "search": {
+    "placeholder": "Soruları, cevapları, açıklamaları arayın..."
+  },
+  "filters": {
+    "topic": "Konu",
+    "allTopics": "Tüm Konular",
+    "difficulty": "Zorluk",
+    "allLevels": "Tüm Seviyeler",
+    "progress": "İlerlemem",
+    "allCards": "Tüm Kartlar",
+    "newCards": "Yeni (Hiç İncelenmemiş)",
+    "noIdea": "Bilmiyorum",
+    "partial": "Kısmi",
+    "gotIt": "Anladım",
+    "mastered": "Ustalaştım"
+  },
+  "results": {
+    "showing": "{{total}} karttan {{filtered}} tanesi gösteriliyor",
+    "showing_one": "{{total}} karttan 1 tanesi gösteriliyor",
+    "showing_other": "{{total}} karttan {{filtered}} tanesi gösteriliyor",
+    "noCards": "Kart bulunamadı",
+    "tryAdjusting": "Filtreleri ayarlamayı deneyin"
+  },
+  "card": {
+    "clickToView": "Detayları görmek için tıklayın",
+    "new": "YENİ",
+    "answer": "Cevap:",
+    "explanation": "Açıklama:",
+    "codeExample": "Kod Örneği:",
+    "yourProgress": "İlerlemeniz:",
+    "reviewed": "İncelenme",
+    "accuracy": "Doğruluk",
+    "confidence": "Güven",
+    "nextReview": "Sonraki İnceleme"
+  }
+}
