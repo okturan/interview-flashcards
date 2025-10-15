@@ -1,0 +1,45 @@
+{
+  "header": {
+    "title": "Settings",
+    "subtitle": "Manage your data and preferences"
+  },
+  "dataManagement": {
+    "title": "Data Management",
+    "export": {
+      "title": "Export Your Data",
+      "description": "Download a backup of all your progress, including card reviews, sessions, achievements, and statistics.",
+      "button": "Export Data",
+      "buttonLoading": "Exporting...",
+      "successMessage": "Export successful! File downloaded.",
+      "errorMessage": "Export failed. Please try again.",
+      "preparingMessage": "Preparing export..."
+    },
+    "import": {
+      "title": "Import Data",
+      "description": "Restore your progress from a previously exported backup file. This will merge with your existing data.",
+      "button": "Import Data",
+      "buttonLoading": "Importing...",
+      "readingMessage": "Reading file...",
+      "restoringMessage": "Restoring data...",
+      "successMessage": "Import successful! Restored {{cards}} cards and {{sessions}} sessions.",
+      "errorMessage": "Import failed: {{error}}",
+      "invalidFileError": "Invalid backup file format"
+    },
+    "delete": {
+      "title": "Danger Zone",
+      "description": "Permanently delete all your progress and start fresh. This action cannot be undone.",
+      "button": "Delete All Data",
+      "confirmTitle": "Are you absolutely sure? This will delete all your progress permanently!",
+      "confirmButton": "Yes, Delete Everything",
+      "cancelButton": "Cancel",
+      "errorMessage": "Failed to delete data. Please try again."
+    }
+  },
+  "statistics": {
+    "title": "Current Statistics",
+    "totalXP": "Total XP",
+    "dayStreak": "Day Streak",
+    "achievements": "Achievements",
+    "cardsReviewed": "Cards Reviewed"
+  }
+}

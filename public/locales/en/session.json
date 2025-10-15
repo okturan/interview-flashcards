@@ -1,0 +1,47 @@
+{
+  "header": {
+    "title": "Study Session",
+    "remaining": "{{count}} card remaining",
+    "remaining_other": "{{count}} cards remaining",
+    "endSession": "End Session"
+  },
+  "instructions": {
+    "flipCard": "Press Space to flip the card"
+  },
+  "confidence": {
+    "question": "How well did you know this?",
+    "levels": {
+      "unknown": {
+        "label": "No Idea",
+        "nextReview": "10 minutes"
+      },
+      "partial": {
+        "label": "Partial",
+        "nextReview": "1 day"
+      },
+      "known": {
+        "label": "Got It",
+        "nextReview": "3 days"
+      },
+      "mastered": {
+        "label": "Mastered",
+        "nextReview": "7+ days"
+      }
+    },
+    "tip": "💡 Tip: Use keyboard shortcuts 1-4 for faster reviews"
+  },
+  "flashcard": {
+    "answer": "Answer",
+    "explanation": "Explanation",
+    "codeExample": "Code Example",
+    "clickToReveal": "Click to reveal answer",
+    "clickToSeeQuestion": "Click to see question",
+    "noCard": "No card available"
+  },
+  "completion": {
+    "title": "Session Complete! 🎉",
+    "cardsReviewed": "You reviewed {{count}} card",
+    "cardsReviewed_other": "You reviewed {{count}} cards",
+    "xpEarned": "XP Earned"
+  }
+}

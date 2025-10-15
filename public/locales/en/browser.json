@@ -1,0 +1,41 @@
+{
+  "title": "Flashcard Browser",
+  "subtitle": "Browse and search through all {{count}} flashcards",
+  "subtitle_one": "Browse and search through 1 flashcard",
+  "subtitle_other": "Browse and search through {{count}} flashcards",
+  "search": {
+    "placeholder": "Search questions, answers, explanations..."
+  },
+  "filters": {
+    "topic": "Topic",
+    "allTopics": "All Topics",
+    "difficulty": "Difficulty",
+    "allLevels": "All Levels",
+    "progress": "My Progress",
+    "allCards": "All Cards",
+    "newCards": "New (Never Reviewed)",
+    "noIdea": "No Idea",
+    "partial": "Partial",
+    "gotIt": "Got It",
+    "mastered": "Mastered"
+  },
+  "results": {
+    "showing": "Showing {{filtered}} of {{total}} cards",
+    "showing_one": "Showing 1 of {{total}} card",
+    "showing_other": "Showing {{filtered}} of {{total}} cards",
+    "noCards": "No flashcards found",
+    "tryAdjusting": "Try adjusting your filters"
+  },
+  "card": {
+    "clickToView": "Click to view details",
+    "new": "NEW",
+    "answer": "Answer:",
+    "explanation": "Explanation:",
+    "codeExample": "Code Example:",
+    "yourProgress": "Your Progress:",
+    "reviewed": "Reviewed",
+    "accuracy": "Accuracy",
+    "confidence": "Confidence",
+    "nextReview": "Next Review"
+  }
+}

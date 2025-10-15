@@ -1,0 +1,20 @@
+{
+  "basics": "Java Basics",
+  "oop": "OOP Concepts",
+  "collections": "Collections",
+  "concurrency": "Concurrency",
+  "jvm": "JVM Internals",
+  "streams": "Streams API",
+  "exception_handling": "Exception Handling",
+  "design_patterns": "Design Patterns",
+  "spring": "Spring Framework",
+  "testing": "Testing",
+  "generics": "Generics",
+  "java8": "Java 8+ Features",
+  "io": "I/O & Serialization",
+  "string": "String Manipulation",
+  "arrays": "Arrays",
+  "wrapper": "Wrapper Classes",
+  "access": "Access Modifiers",
+  "constructor": "Constructors"
+}

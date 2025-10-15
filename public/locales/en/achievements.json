@@ -1,0 +1,75 @@
+{
+  "title": "Achievements",
+  "unlocked": "Achievement Unlocked!",
+  "locked": "Locked",
+  "progress": "Progress: {{current}}/{{total}}",
+  "categories": {
+    "streak": "Streak",
+    "mastery": "Mastery",
+    "volume": "Volume",
+    "accuracy": "Accuracy",
+    "session": "Session"
+  },
+  "list": {
+    "first-steps": {
+      "name": "First Steps",
+      "description": "Review 25 cards"
+    },
+    "hundred-club": {
+      "name": "Hundred Club",
+      "description": "Review 100 cards"
+    },
+    "thousand-club": {
+      "name": "Thousand Club",
+      "description": "Review 1000 cards"
+    },
+    "dedicated": {
+      "name": "Dedicated",
+      "description": "Maintain a 3 day streak"
+    },
+    "committed": {
+      "name": "Committed",
+      "description": "Maintain a 7 day streak"
+    },
+    "unstoppable": {
+      "name": "Unstoppable",
+      "description": "Maintain a 14 day streak"
+    },
+    "legend": {
+      "name": "Legend",
+      "description": "Maintain a 30 day streak"
+    },
+    "sharp-mind": {
+      "name": "Sharp Mind",
+      "description": "80% accuracy over 50 cards"
+    },
+    "perfectionist": {
+      "name": "Perfectionist",
+      "description": "95% accuracy over 100 cards"
+    },
+    "collections-expert": {
+      "name": "Collections Expert",
+      "description": "90% mastery in Collections"
+    },
+    "concurrency-ninja": {
+      "name": "Concurrency Ninja",
+      "description": "90% mastery in Concurrency"
+    },
+    "java-master": {
+      "name": "Java Master",
+      "description": "85% mastery across all topics"
+    },
+    "coffee-break-warrior": {
+      "name": "Coffee Break Warrior",
+      "description": "Complete 10 Quick 5 sessions"
+    },
+    "deep-thinker": {
+      "name": "Deep Thinker",
+      "description": "Complete 5 Deep Dive sessions"
+    },
+    "interview-ready": {
+      "name": "Interview Ready",
+      "description": "Complete Interview Mode with 80%+"
+    }
+  }
+}

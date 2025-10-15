@@ -1,0 +1,54 @@
+{
+  "app": {
+    "name": "JavaMaster",
+    "tagline": "Ace Your Java Interviews"
+  },
+  "navigation": {
+    "home": "Home",
+    "study": "Study",
+    "progress": "Progress",
+    "settings": "Settings"
+  },
+  "buttons": {
+    "start": "Start",
+    "continue": "Continue",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "back": "Back",
+    "backToDashboard": "Back to Dashboard",
+    "endSession": "End Session"
+  },
+  "labels": {
+    "loading": "Loading...",
+    "loadingTranslations": "Loading translations...",
+    "loadingApp": "Loading your interview prep...",
+    "noData": "No data available",
+    "error": "An error occurred",
+    "or": "or",
+    "cards": "{{count}} card",
+    "cards_other": "{{count}} cards",
+    "estimatedTime": "~{{minutes}}min",
+    "selectTopic": "Select a Topic"
+  },
+  "accessibility": {
+    "changeLanguage": "Change language"
+  },
+  "difficulty": {
+    "junior": "Junior",
+    "mid": "Mid",
+    "senior": "Senior"
+  },
+  "time": {
+    "minute": "{{count}} minute",
+    "minute_other": "{{count}} minutes",
+    "hour": "{{count}} hour",
+    "hour_other": "{{count}} hours",
+    "day": "{{count}} day",
+    "day_other": "{{count}} days",
+    "approximately": "~{{time}}min"
+  }
+}

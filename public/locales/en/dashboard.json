@@ -1,0 +1,102 @@
+{
+  "welcome": {
+    "title": "Welcome! 👋",
+    "subtitle": "Ready to level up your Java knowledge?"
+  },
+  "stats": {
+    "streak": {
+      "label": "Day Streak",
+      "best": "Best: {{count}}"
+    },
+    "level": {
+      "label": "Level {{level}}",
+      "totalXP": "Total XP: {{xp}}",
+      "nextLevel": "{{xp}} XP to Level {{level}}"
+    },
+    "cardsDue": {
+      "label": "Cards Due",
+      "new": "{{count}} new card",
+      "new_other": "{{count}} new cards"
+    },
+    "achievements": {
+      "label": "Achievements",
+      "reviewed": "{{count}} card reviewed",
+      "reviewed_other": "{{count}} cards reviewed"
+    }
+  },
+  "dailyGoal": {
+    "title": "Daily Goal",
+    "progress": "{{current}} / {{goal}} cards reviewed today"
+  },
+  "buttons": {
+    "browseCards": "Browse Cards"
+  },
+  "sessions": {
+    "title": "Start a Session",
+    "quick5": {
+      "name": "Quick 5",
+      "description": "5 cards in ~2 minutes"
+    },
+    "juniorLevel": {
+      "name": "Junior Level",
+      "description": "Entry-level questions"
+    },
+    "midLevel": {
+      "name": "Mid Level",
+      "description": "Intermediate concepts"
+    },
+    "seniorLevel": {
+      "name": "Senior Level",
+      "description": "Advanced topics"
+    },
+    "deepDive": {
+      "name": "Deep Dive",
+      "description": "15-20 cards, topic focus"
+    },
+    "weakSpot": {
+      "name": "Weak Spot",
+      "description": "10 cards from weak areas"
+    },
+    "interview": {
+      "name": "Interview Mode",
+      "description": "Mixed difficulty, timed"
+    },
+    "random": {
+      "name": "Random Blitz",
+      "description": "Test your overall knowledge"
+    }
+  },
+  "topicMastery": {
+    "title": "Topic Mastery"
+  },
+  "spacedRepetition": {
+    "title": "Spaced Repetition Insights",
+    "stats": {
+      "newCards": "New Cards",
+      "overdue": "Overdue",
+      "lowConfidence": "Low Confidence",
+      "lapses": "Lapses"
+    },
+    "messages": {
+      "allCaughtUp": "All caught up! No cards due for review. 🎉",
+      "cardsDue": "You have {{count}} cards ready for review to maximize retention.",
+      "checkBackLater": "Check back later for more cards to review."
+    },
+    "sections": {
+      "mostOverdue": "Most Overdue Cards",
+      "lowConfidence": "Low Confidence Cards (Need More Practice)",
+      "lapses": "Cards Needing Re-review (Had Lapses)",
+      "lapsesDescription": "These cards were previously marked as known/mastered but dropped back to lower confidence levels.",
+      "allCaughtUpTitle": "All caught up!",
+      "hoursOverdue": "{{hours}}h overdue",
+      "daysOverdue": "{{days}}d overdue",
+      "reviewed": "Reviewed {{count}}x",
+      "lapse": "lapse",
+      "lapse_other": "lapses"
+    },
+    "explanation": {
+      "title": "How Spaced Repetition Works",
+      "description": "The app uses a modified SuperMemo SM-2 algorithm to schedule reviews at optimal intervals. Cards you mark as \"Mastered\" appear less frequently, while cards marked as \"No Idea\" appear more often. This maximizes long-term retention while minimizing study time."
+    }
+  }
+}
