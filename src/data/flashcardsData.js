@@ -13282,7 +13282,7 @@ private BasicSingleton() {
 // ✗ Not for everything! (can make testing difficult)`,
       language: 'java'
     },
-    topic: 'design-patterns',
+    topic: 'design_patterns',
     difficulty: 'mid',
     tags: ['singleton', 'design-pattern', 'creational', 'interview'],    commonPitfalls: ['Not thread-safe', 'Broken by reflection/serialization', 'Makes testing difficult', 'Overusing singleton'],
     realWorldUse: 'Configuration management, logging, database connections, caching, thread pools, application state.'
@@ -13445,7 +13445,7 @@ class EnumShapeFactory {
 // ✓ Multiple similar objects with slight variations`,
       language: 'java'
     },
-    topic: 'design-patterns',
+    topic: 'design_patterns',
     difficulty: 'mid',
     tags: ['factory', 'design-pattern', 'creational', 'interview'],    commonPitfalls: ['Overcomplicating simple object creation', 'Not handling invalid types', 'Factory class becomes too large', 'Forgetting to update factory when adding types'],
     realWorldUse: 'Object creation, plugin systems, database connections, document parsers, UI component creation.'
@@ -13652,7 +13652,7 @@ HttpRequest request = new HttpRequest.Builder("https://api.example.com/users")
 // ✓ Complex object construction`,
       language: 'java'
     },
-    topic: 'design-patterns',
+    topic: 'design_patterns',
     difficulty: 'mid',
     tags: ['builder', 'design-pattern', 'creational', 'immutability'],    commonPitfalls: ['Forgetting to make fields final', 'Not validating in build()', 'Builder class becomes too large', 'Overusing for simple objects'],
     realWorldUse: 'Complex object creation, configuration objects, HTTP requests, database queries, UI components, test data.'
@@ -13847,7 +13847,7 @@ sorter.sort(data);  // Uses Bubble Sort
 // ✓ Different behaviors for different contexts`,
       language: 'java'
     },
-    topic: 'design-patterns',
+    topic: 'design_patterns',
     difficulty: 'mid',
     tags: ['strategy', 'design-pattern', 'behavioral', 'polymorphism'],    commonPitfalls: ['Creating too many strategy classes', 'Not setting strategy before use', 'Strategies sharing too much state', 'Using when simple if-else suffices'],
     realWorldUse: 'Payment processing, sorting algorithms, validation rules, compression algorithms, routing strategies, pricing calculations.'
@@ -14070,7 +14070,7 @@ class WeatherStation extends Observable {
 // ✓ Real-time data feeds`,
       language: 'java'
     },
-    topic: 'design-patterns',
+    topic: 'design_patterns',
     difficulty: 'mid',
     tags: ['observer', 'design-pattern', 'behavioral', 'event-driven'],    commonPitfalls: ['Memory leaks (not detaching observers)', 'Observer order dependency', 'Cascading updates', 'Thread safety issues'],
     realWorldUse: 'Event systems, GUI frameworks, stock monitoring, news feeds, chat applications, data binding, reactive programming.'
@@ -14265,7 +14265,7 @@ OrderService service = new OrderService(gateway, notifier);
 // ✓ When flexibility is needed`,
       language: 'java'
     },
-    topic: 'design-patterns',
+    topic: 'design_patterns',
     difficulty: 'mid',
     tags: ['dependency-injection', 'di', 'design-principle', 'testing', 'spring'],    commonPitfalls: ['Circular dependencies', 'Too many constructor parameters', 'Using field injection (hard to test)', 'Not using interfaces'],
     realWorldUse: 'Spring applications, testing, modular code, plugin systems, service layers, enterprise applications.'

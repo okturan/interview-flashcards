@@ -241,10 +241,6 @@ export const SESSION_CONFIGS = {
 
 ## Known Issues
 
-### Critical
-- **Topic data inconsistency**: 60+ flashcards reference topics not defined in TOPIC_INFO
-- **Accuracy calculation**: Hardcoded to 80% instead of calculating from actual data
-
 ### Missing Features
 - **Achievements display**: 15 achievements are tracked but there's no dedicated page to view them
 - **PWA support**: Not configured for offline use

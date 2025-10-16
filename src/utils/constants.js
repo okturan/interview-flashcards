@@ -103,6 +103,38 @@ export const TOPIC_INFO = {
   testing: {
     color: 'teal',
     icon: 'CheckCircle'
+  },
+  java8: {
+    color: 'indigo',
+    icon: 'Zap'
+  },
+  generics: {
+    color: 'violet',
+    icon: 'Code'
+  },
+  string: {
+    color: 'amber',
+    icon: 'Type'
+  },
+  arrays: {
+    color: 'emerald',
+    icon: 'List'
+  },
+  wrapper: {
+    color: 'rose',
+    icon: 'Package'
+  },
+  io: {
+    color: 'sky',
+    icon: 'FileText'
+  },
+  constructor: {
+    color: 'fuchsia',
+    icon: 'Wrench'
+  },
+  access: {
+    color: 'slate',
+    icon: 'Lock'
   }
 };
 

@@ -27,7 +27,10 @@ export default function StudySession() {
     endSession,
     sessionId,
     cardsReviewedInSession,
-    allCards
+    allCards,
+    submitConfidence,
+    getSessionAccuracy,
+    sessionType: currentSessionType
   } = useFlashcardStore();
 
   const { recordReview, completeSession } = useProgressStore();
@@ -70,13 +73,17 @@ export default function StudySession() {
 
     const responseTime = (Date.now() - reviewStartTime) / 1000; // seconds
 
+    // Submit confidence to track for accuracy calculation
+    await submitConfidence(confidence, responseTime);
+
     // Record the review
     await recordReview(currentCard.id, confidence, responseTime, sessionId, allCards);
 
     // Check if this was the last card
     if (getCardsRemaining() === 0) {
-      // Session complete
-      await completeSession('quick5', cardsReviewedInSession, 80); // TODO: Calculate actual accuracy
+      // Session complete - calculate actual accuracy
+      const accuracy = getSessionAccuracy();
+      await completeSession(currentSessionType, cardsReviewedInSession, accuracy);
       setSessionComplete(true);
     } else {
       // Move to next card

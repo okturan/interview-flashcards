@@ -16,6 +16,7 @@ export const useFlashcardStore = create((set, get) => ({
   sessionId: null,
   sessionStartTime: null,
   cardsReviewedInSession: 0,
+  sessionReviews: [], // Track confidence ratings for accuracy calculation
   loading: false,
   error: null,
 
@@ -142,7 +143,8 @@ export const useFlashcardStore = create((set, get) => ({
       sessionActive: true,
       sessionId,
       sessionStartTime: new Date(),
-      cardsReviewedInSession: 0
+      cardsReviewedInSession: 0,
+      sessionReviews: []
     });
 
     // Save session to storage
@@ -179,11 +181,30 @@ export const useFlashcardStore = create((set, get) => ({
     const state = get();
     if (!state.currentCard || !state.sessionId) return;
 
+    // Track review for accuracy calculation
+    const newReviews = [...state.sessionReviews, confidence];
+
     // This will be handled by progressStore
-    // Just increment cards reviewed
+    // Just increment cards reviewed and track reviews
     set({
-      cardsReviewedInSession: state.cardsReviewedInSession + 1
+      cardsReviewedInSession: state.cardsReviewedInSession + 1,
+      sessionReviews: newReviews
     });
+  },
+
+  // Calculate session accuracy based on confidence ratings
+  getSessionAccuracy: () => {
+    const state = get();
+    const reviews = state.sessionReviews;
+
+    if (reviews.length === 0) return 0;
+
+    // Count 'known' and 'mastered' as correct
+    const correctCount = reviews.filter(conf =>
+      conf === 'known' || conf === 'mastered'
+    ).length;
+
+    return Math.round((correctCount / reviews.length) * 100);
   },
 
   // End current session
