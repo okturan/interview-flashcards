@@ -1,6 +1,6 @@
 # JavaMaster - Interview Flashcards System
 
-A progressive web application designed to help developers prepare for Java technical interviews through an adaptive, engagement-driven flashcard system.
+A web application designed to help developers prepare for Java technical interviews through an adaptive, engagement-driven flashcard system.
 
 ## Overview
 
