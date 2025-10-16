@@ -2,48 +2,26 @@
 
 A progressive web application designed to help developers prepare for Java technical interviews through an adaptive, engagement-driven flashcard system.
 
-## Features
+## Overview
 
-### Core Features ✨
-- **Adaptive Spaced Repetition**: Uses the SM-2 algorithm to optimize learning and review scheduling
-- **165+ Comprehensive Flashcards**: Detailed answers with code examples covering all major Java topics
-- **Bilingual Support**: All flashcards available in English and Turkish
-- **Flashcard System**: Beautiful card UI with flip animation and syntax-highlighted code examples
-- **Multiple Session Types**:
-  - Quick 5: 5 cards in ~2 minutes
-  - Deep Dive: 15-20 cards, single topic focus
-  - Weak Spot: 10 cards from weak areas
-  - Interview Mode: Mixed difficulty, timed (coming soon)
-  - Random Blitz: Test overall knowledge
+**JavaMaster** is a bilingual flashcard app featuring spaced repetition, gamification, and comprehensive Java interview content. Study smarter with adaptive algorithms that optimize your learning schedule.
 
-### Progress Tracking 📊
-- **Streak System**: Daily streak tracking with visual flame indicators
-- **XP and Leveling**: Earn XP for reviews, completions, and achievements
-- **Topic Mastery**: Track your proficiency across 10 Java topics
-- **Statistics**: Total cards reviewed, accuracy rate, study time
+**Key Highlights:**
+- 🧠 SM-2 spaced repetition algorithm
+- 🌍 Full English/Turkish support
+- 🎮 XP, levels, streaks, and achievements
+- 📊 Topic mastery and progress tracking
+- ⚡ 8 session types for different study needs
+- 💾 Local-first with IndexedDB storage
 
-### Gamification 🎮
-- Achievement system with 15+ unlockable badges
-- XP multipliers for streaks and accuracy
-- Level progression system
-- Daily goals and progress tracking
-
-### Topics Covered 📚
-- Java Basics
-- Object-Oriented Programming (OOP)
-- Collections Framework
-- Concurrency & Multithreading
-- JVM Internals
-- Streams API
-- Exception Handling
-- Design Patterns
-- Spring Framework
-- Testing
+### Topics Covered
+Java Basics • OOP • Collections • Concurrency • JVM Internals • Streams API • Exception Handling • Design Patterns • Spring Framework • Testing
 
 ## Tech Stack
 
 - **Frontend**: React 19, Vite 7
-- **Styling**: Tailwind CSS 4
+- **Styling**: Tailwind CSS 4 (build-time processing via @tailwindcss/vite)
+- **Internationalization**: react-i18next with 7 namespaces
 - **State Management**: Zustand with persistence
 - **Storage**: IndexedDB via Dexie.js
 - **Animations**: Framer Motion
@@ -93,14 +71,18 @@ src/
 │   ├── flashcard/
 │   │   ├── FlashcardView.jsx       # Main flashcard component with flip animation
 │   │   └── ConfidenceButtons.jsx   # 4-level confidence rating buttons
-│   └── ui/
-│       ├── Button.jsx               # Reusable button component
-│       ├── Card.jsx                 # Card container component
-│       ├── Badge.jsx                # Badge/tag component
-│       └── Progress.jsx             # Progress bar component
+│   ├── ui/
+│   │   ├── Button.jsx               # Reusable button component
+│   │   ├── Card.jsx                 # Card container component
+│   │   ├── Badge.jsx                # Badge/tag component
+│   │   └── Progress.jsx             # Progress bar component
+│   ├── SpacedRepetitionInsights.jsx # Spaced repetition dashboard widget
+│   └── LanguageSwitcher.jsx         # Language toggle component
 ├── pages/
 │   ├── Dashboard.jsx                # Main dashboard with stats and session selector
-│   └── StudySession.jsx             # Active study session page
+│   ├── StudySession.jsx             # Active study session page
+│   ├── FlashcardBrowser.jsx         # Browse all cards by topic
+│   └── Settings.jsx                 # Settings and data management
 ├── store/
 │   ├── useFlashcardStore.js         # Flashcard state management
 │   └── useProgressStore.js          # User progress and achievements
@@ -110,11 +92,25 @@ src/
 ├── data/
 │   ├── flashcardsData.js            # Flashcard content data
 │   └── initializeData.js            # Initialize flashcards in IndexedDB
+├── i18n/
+│   └── config.js                    # i18next configuration
 ├── utils/
-│   ├── constants.js                 # App constants and configurations
-│   └── helpers.js                   # Helper functions
+│   ├── constants.js                 # App constants (no UI strings, config only)
+│   ├── helpers.js                   # Helper functions
+│   └── cardLocalization.js          # Card content localization utility
 └── types/
     └── index.ts                     # TypeScript type definitions
+
+public/locales/                      # Translation files (238 UI strings)
+├── en/
+│   ├── common.json                  # Common UI strings
+│   ├── dashboard.json               # Dashboard translations
+│   ├── session.json                 # Study session translations
+│   ├── achievements.json            # Achievement translations
+│   ├── topics.json                  # Topic name translations
+│   ├── browser.json                 # Flashcard browser translations
+│   └── settings.json                # Settings page translations
+└── tr/                              # Turkish translations (mirrors en/)
 ```
 
 ## How to Use
@@ -141,6 +137,33 @@ src/
 - Study at least one session per day to maintain your streak
 - Streaks unlock achievements and XP multipliers
 - Use streak save feature (once per week) to prevent streak breaks
+
+## Internationalization (i18n)
+
+This project uses **react-i18next** for full bilingual support. All UI strings and flashcard content are available in English and Turkish.
+
+### Translation Structure
+- **UI Strings**: Organized in 7 namespaces under `public/locales/{en,tr}/`
+- **Card Content**: Embedded translations in `flashcardsData.js` using `translations` field
+- **Documentation**: See [docs/i18n-standards.md](docs/i18n-standards.md) for complete guidelines
+
+### Adding Translations
+
+For UI strings, add to the appropriate namespace in `public/locales/`:
+```json
+// public/locales/en/common.json
+{
+  "labels": {
+    "myNewLabel": "My New Label"
+  }
+}
+```
+
+### Naming Conventions
+- **Topics**: snake_case (e.g., `exception_handling`)
+- **Sessions**: camelCase (e.g., `juniorLevel`)
+- **Achievements**: kebab-case (e.g., `first-steps`)
+- **Confidence**: lowercase (e.g., `unknown`, `mastered`)
 
 ## Customization
 
@@ -172,6 +195,8 @@ Add flashcards to the `flashcardsData` array in `src/data/flashcardsData.js`:
 }
 ```
 
+**Note**: Make sure the topic exists in `TOPIC_INFO` in `src/utils/constants.js` and has translations in `public/locales/{en,tr}/topics.json`.
+
 ### Adjusting Session Types
 
 Modify session configurations in `src/utils/constants.js`:
@@ -179,38 +204,48 @@ Modify session configurations in `src/utils/constants.js`:
 ```javascript
 export const SESSION_CONFIGS = {
   quick5: {
-    name: 'Quick 5',
     cardCount: 5,
     estimatedTime: 2,
-    // ...
+    icon: 'Zap'
   }
+  // Note: name and description come from i18n (session:{key}.name)
 }
 ```
 
-## Features Roadmap
+## Current Features
 
-### Phase 1 (MVP - Current) ✅
-- [x] Basic flashcard system
-- [x] Spaced repetition algorithm
-- [x] Progress tracking
-- [x] Session types
-- [x] Achievement system
-- [x] Dashboard
+### Study System ✅
+- [x] Basic flashcard system with flip animation
+- [x] Spaced repetition algorithm (SM-2)
+- [x] 8 session types (Quick 5, Junior/Mid/Senior Level, Deep Dive, Weak Spot, Interview, Random)
+- [x] 4-level confidence rating system
+- [x] Code syntax highlighting
 
-### Phase 2 (Coming Soon)
-- [ ] Interview simulation mode with timer
-- [ ] Code syntax highlighting improvements
-- [ ] Offline support (PWA)
-- [ ] Export/import data
-- [ ] Advanced analytics with charts
-- [ ] More achievements
+### Progress & Gamification ✅
+- [x] Progress tracking with IndexedDB
+- [x] Streak system with daily tracking
+- [x] XP and leveling system
+- [x] Achievement system (15 achievements)
+- [x] Topic mastery tracking
+- [x] Dashboard with statistics
 
-### Phase 3 (Future)
-- [ ] Backend integration (user accounts)
-- [ ] Custom card creation
-- [ ] Community features
-- [ ] Mobile app
-- [ ] AI-generated explanations
+### User Experience ✅
+- [x] Flashcard browser (browse by topic)
+- [x] Settings page (export/import/delete data)
+- [x] Spaced repetition insights widget
+- [x] Full bilingual support (English/Turkish)
+- [x] Language switcher
+- [x] Keyboard shortcuts
+
+## Known Issues
+
+### Critical
+- **Topic data inconsistency**: 60+ flashcards reference topics not defined in TOPIC_INFO
+- **Accuracy calculation**: Hardcoded to 80% instead of calculating from actual data
+
+### Missing Features
+- **Achievements display**: 15 achievements are tracked but there's no dedicated page to view them
+- **PWA support**: Not configured for offline use
 
 ## Contributing
 
