@@ -2,6 +2,8 @@
 
 A web application designed to help developers prepare for Java technical interviews through an adaptive, engagement-driven flashcard system.
 
+![JavaMaster Dashboard](docs/screenshot-main.jpg)
+
 ## Overview
 
 **JavaMaster** is a bilingual flashcard app featuring spaced repetition, gamification, and comprehensive Java interview content. Study smarter with adaptive algorithms that optimize your learning schedule.
