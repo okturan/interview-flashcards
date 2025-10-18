@@ -12,7 +12,7 @@ import TopicSelectionModal from '../components/TopicSelectionModal';
 import SpacedRepetitionInsights from '../components/SpacedRepetitionInsights';
 import { SESSION_CONFIGS, TOPIC_INFO } from '../utils/constants';
 import { xpProgress } from '../utils/helpers';
-import { Flame, Zap, Target, BookOpen, TrendingUp, Award, Settings } from 'lucide-react';
+import { Flame, Zap, Target, BookOpen, TrendingUp, Award, Settings, Trophy } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Dashboard() {
@@ -75,6 +75,14 @@ export default function Dashboard() {
               </p>
             </div>
             <div className="flex items-center gap-2">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => navigate('/achievements')}
+                className="md:size-md"
+              >
+                <Trophy size={20} />
+              </Button>
               <Button
                 variant="ghost"
                 size="sm"

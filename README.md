@@ -15,6 +15,7 @@ A web application designed to help developers prepare for Java technical intervi
 - 📊 Topic mastery and progress tracking
 - ⚡ 8 session types for different study needs
 - 💾 Local-first with IndexedDB storage
+- 📱 PWA support - install and use offline
 
 ### Topics Covered
 Java Basics • OOP • Collections • Concurrency • JVM Internals • Streams API • Exception Handling • Design Patterns • Spring Framework • Testing
@@ -227,7 +228,8 @@ export const SESSION_CONFIGS = {
 - [x] Progress tracking with IndexedDB
 - [x] Streak system with daily tracking
 - [x] XP and leveling system
-- [x] Achievement system (15 achievements)
+- [x] Achievement system (15 achievements across 5 categories)
+- [x] Achievements display page with progress tracking
 - [x] Topic mastery tracking
 - [x] Dashboard with statistics
 
@@ -238,12 +240,7 @@ export const SESSION_CONFIGS = {
 - [x] Full bilingual support (English/Turkish)
 - [x] Language switcher
 - [x] Keyboard shortcuts
-
-## Known Issues
-
-### Missing Features
-- **Achievements display**: 15 achievements are tracked but there's no dedicated page to view them
-- **PWA support**: Not configured for offline use
+- [x] PWA support - installable, works offline
 
 ## Contributing
 

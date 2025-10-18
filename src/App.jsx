@@ -8,6 +8,7 @@ import Dashboard from './pages/Dashboard';
 import StudySession from './pages/StudySession';
 import FlashcardBrowser from './pages/FlashcardBrowser';
 import Settings from './pages/Settings';
+import Achievements from './pages/Achievements';
 
 function App() {
   const { t } = useTranslation(['common']);
@@ -61,6 +62,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/study" element={<StudySession />} />
         <Route path="/browse" element={<FlashcardBrowser />} />
+        <Route path="/achievements" element={<Achievements />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
     </Router>

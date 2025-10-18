@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Blue gradient background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="url(#bgGrad)"/>
+
+  <!-- Book icon -->
+  <g transform="translate(106, 106)">
+    <!-- Book pages -->
+    <path d="M 50 0 L 250 0 C 280 0 300 20 300 50 L 300 250 C 300 280 280 300 250 300 L 50 300 C 20 300 0 280 0 250 L 0 50 C 0 20 20 0 50 0 Z" fill="white" opacity="0.95"/>
+
+    <!-- Book spine/fold -->
+    <line x1="150" y1="0" x2="150" y2="300" stroke="#3b82f6" stroke-width="4" opacity="0.3"/>
+
+    <!-- Text lines (representing flashcard content) -->
+    <line x1="40" y1="80" x2="260" y2="80" stroke="#3b82f6" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+    <line x1="40" y1="120" x2="220" y2="120" stroke="#3b82f6" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+    <line x1="40" y1="160" x2="240" y2="160" stroke="#3b82f6" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Java coffee cup icon -->
+    <g transform="translate(180, 180)">
+      <ellipse cx="0" cy="0" rx="35" ry="15" fill="#8b5cf6"/>
+      <rect x="-35" y="0" width="70" height="60" fill="#8b5cf6"/>
+      <ellipse cx="0" cy="60" rx="35" ry="15" fill="#6d28d9"/>
+      <!-- Steam -->
+      <path d="M -15 -10 Q -15 -25 -20 -30" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+      <path d="M 0 -15 Q 0 -30 -5 -35" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+      <path d="M 15 -10 Q 15 -25 10 -30" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+    </g>
+  </g>
+</svg>

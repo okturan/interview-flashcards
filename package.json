@@ -29,5 +29,8 @@
     "vite": "^7.1.9",
     "wrangler": "^4.43.0",
     "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "vite-plugin-pwa": "^1.1.0"
   }
 }
