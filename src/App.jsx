@@ -1,14 +1,15 @@
-import { useEffect, useState } from 'react';
+import { lazy, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useFlashcardStore } from './store/useFlashcardStore';
 import { useProgressStore } from './store/useProgressStore';
 import { initializeFlashcards } from './data/initializeData';
-import Dashboard from './pages/Dashboard';
-import StudySession from './pages/StudySession';
-import FlashcardBrowser from './pages/FlashcardBrowser';
-import Settings from './pages/Settings';
-import Achievements from './pages/Achievements';
+
+const Dashboard = lazy(() => import('./pages/Dashboard'));
+const StudySession = lazy(() => import('./pages/StudySession'));
+const FlashcardBrowser = lazy(() => import('./pages/FlashcardBrowser'));
+const Settings = lazy(() => import('./pages/Settings'));
+const Achievements = lazy(() => import('./pages/Achievements'));
 
 function App() {
   const { t } = useTranslation(['common']);

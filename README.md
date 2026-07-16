@@ -2,6 +2,9 @@
 
 A web application designed to help developers prepare for Java technical interviews through an adaptive, engagement-driven flashcard system.
 
+[![CI](https://github.com/okturan/interview-flashcards/actions/workflows/ci.yml/badge.svg)](https://github.com/okturan/interview-flashcards/actions/workflows/ci.yml)
+[![Live demo](https://img.shields.io/badge/demo-java--flashcards.pages.dev-2563eb)](https://java-flashcards.pages.dev/)
+
 ![JavaMaster Dashboard](docs/screenshot-main.jpg)
 
 ## Overview
@@ -13,12 +16,13 @@ A web application designed to help developers prepare for Java technical intervi
 - 🌍 Full English/Turkish support
 - 🎮 XP, levels, streaks, and achievements
 - 📊 Topic mastery and progress tracking
+- 📚 165 authored interview cards across 15 Java topics
 - ⚡ 8 session types for different study needs
 - 💾 Local-first with IndexedDB storage
 - 📱 PWA support - install and use offline
 
 ### Topics Covered
-Java Basics • OOP • Collections • Concurrency • JVM Internals • Streams API • Exception Handling • Design Patterns • Spring Framework • Testing
+Java Basics • OOP • Collections • Concurrency • JVM Internals • Java 8 • Exception Handling • Design Patterns • Generics • Strings • Arrays • Wrapper Types • I/O • Constructors • Access Control
 
 ## Project status and licensing
 
@@ -38,24 +42,26 @@ Java Basics • OOP • Collections • Concurrency • JVM Internals • Stream
 - **Code Highlighting**: Prism.js
 - **Routing**: React Router
 - **Utilities**: date-fns
+- **Delivery**: Cloudflare Pages with an offline-capable service worker
+- **Quality**: Vitest, npm advisory checks, deployment-tool verification, and GitHub Actions on Node 22.12 and 24
 
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18+
-- npm or yarn
+- Node.js 22.12+
+- npm 10+
 
 ### Installation
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/okturan/interview-flashcards.git
 cd interview-flashcards
 ```
 
 2. Install dependencies
 ```bash
-npm install
+npm ci
 ```
 
 3. Start the development server
@@ -71,6 +77,17 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+### Verify the Project
+
+```bash
+npm test
+npm audit --audit-level=high
+npm run build
+npm run check:deploy-tool
+```
+
+The automated suite exercises the SM-2 scheduling transitions, lapse and history handling, review selection, progress calculations, localization fallbacks, all eight session configurations, and integrity of the 165-card bilingual corpus. Route-level code splitting keeps the initial production bundle below Vite's large-chunk warning threshold, while the card corpus is emitted as a separate cacheable asset.
 
 ## Project Structure
 
@@ -110,7 +127,7 @@ src/
 └── types/
     └── index.ts                     # TypeScript type definitions
 
-public/locales/                      # Translation files (238 UI strings)
+public/locales/                      # Translation files (236 UI strings per language)
 ├── en/
 │   ├── common.json                  # Common UI strings
 │   ├── dashboard.json               # Dashboard translations
@@ -132,7 +149,7 @@ public/locales/                      # Translation files (238 UI strings)
 4. **Rate Your Confidence**: Select one of 4 confidence levels:
    - 😰 No Idea (review in 10 minutes)
    - 🤔 Partial (review in 1 day)
-   - ✅ Got It (review in 3 days)
+   - ✅ Got It (review in 3+ days)
    - 🔥 Mastered (review in 7+ days)
 
 ### Keyboard Shortcuts
@@ -250,7 +267,7 @@ export const SESSION_CONFIGS = {
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Issues and focused pull requests are welcome. Please note the repository's no-license status above before reusing code or content outside GitHub's platform terms.
 
 ## Acknowledgments
 

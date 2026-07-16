@@ -21,7 +21,7 @@
       },
       "known": {
         "label": "Got It",
-        "nextReview": "3 days"
+        "nextReview": "3+ days"
       },
       "mastered": {
         "label": "Mastered",
