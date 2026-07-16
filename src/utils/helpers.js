@@ -64,7 +64,9 @@ export function calculateReadinessScore(progress, topicWeights) {
   let weightedScore = 0;
 
   for (const [topic, weight] of Object.entries(topicWeights)) {
-    const mastery = progress.topicMastery?.get?.(topic) || 0;
+    const mastery = progress.topicMastery instanceof Map
+      ? progress.topicMastery.get(topic) || 0
+      : progress.topicMastery?.[topic] || 0;
     weightedScore += mastery * weight;
   }
 

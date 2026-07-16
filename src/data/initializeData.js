@@ -1,8 +1,11 @@
 import { storageService } from '../services/storage';
-import { flashcardsData } from './flashcardsData';
 
 export async function initializeFlashcards() {
   try {
+    // Keep the sizeable learning corpus in its own cacheable bundle rather
+    // than delaying the application shell and route code.
+    const { flashcardsData } = await import('./flashcardsData');
+
     // Check if cards already exist
     const existingCards = await storageService.getAllCards();
 
