@@ -20,6 +20,12 @@ A web application designed to help developers prepare for Java technical intervi
 ### Topics Covered
 Java Basics • OOP • Collections • Concurrency • JVM Internals • Streams API • Exception Handling • Design Patterns • Spring Framework • Testing
 
+## Project status and licensing
+
+- **Status:** Functional portfolio and learning project, deployed on Cloudflare Pages at [java-flashcards.pages.dev](https://java-flashcards.pages.dev/). It is maintained on a best-effort basis without a service-level or support commitment.
+- **License:** This repository currently has no license file. GitHub may permit viewing and forking through its platform terms, but no broader permission is granted to copy, modify, or redistribute the source code or bundled flashcard and translation content.
+- **Content provenance:** The repository history records a single project author, but the flashcards are described as drawing on common Java interview resources and individual source provenance is not documented. Dependencies remain subject to their own licenses, and the learning model is based on the SuperMemo SM-2 method.
+
 ## Tech Stack
 
 - **Frontend**: React 19, Vite 7
@@ -245,10 +251,6 @@ export const SESSION_CONFIGS = {
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Acknowledgments
 
