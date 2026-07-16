@@ -28,23 +28,29 @@ export function calculateNextReview(currentInterval, easeFactor, confidence) {
   // Clamp ease factor between 1.3 and 2.5
   newEaseFactor = Math.max(1.3, Math.min(2.5, newEaseFactor));
 
+  // Confidence buttons promise these minimum intervals to the user.
+  const minimumIntervalMap = {
+    'partial': 1,
+    'known': 3,
+    'mastered': 7
+  };
+
   // Calculate next interval
   let nextInterval;
 
   if (quality < 3) {
     // Failed recall - reset to beginning
     nextInterval = 1 / 144; // 10 minutes (1/144 of a day)
+  } else if (confidence === 'partial') {
+    // Effortful recall resets the card to a short reinforcement interval.
+    nextInterval = minimumIntervalMap.partial;
   } else {
-    if (currentInterval === 0 || currentInterval === 1 / 144) {
-      // First successful recall
-      nextInterval = 1; // 1 day
-    } else if (currentInterval === 1) {
-      // Second successful recall
-      nextInterval = 6; // 6 days
-    } else {
-      // Subsequent reviews - multiply by ease factor
-      nextInterval = Math.round(currentInterval * newEaseFactor);
-    }
+    // Confident recalls honor the visible minimum, then grow with SM-2 ease.
+    const minimumInterval = minimumIntervalMap[confidence];
+    const grownInterval = currentInterval > 1 / 144
+      ? Math.round(currentInterval * newEaseFactor)
+      : minimumInterval;
+    nextInterval = Math.max(minimumInterval, grownInterval);
   }
 
   // Calculate the actual next review date

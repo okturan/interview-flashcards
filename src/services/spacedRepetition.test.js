@@ -28,13 +28,23 @@ describe('calculateNextReview', () => {
     expect(result.nextReviewDate.toISOString()).toBe('2026-07-16T12:10:00.000Z');
   });
 
-  it('advances successful reviews through one day, six days, then SM-2 growth', () => {
-    expect(calculateNextReview(0, 2.5, 'known').nextInterval).toBe(1);
-    expect(calculateNextReview(1, 2.5, 'known').nextInterval).toBe(6);
+  it('honors the visible confidence intervals before applying SM-2 growth', () => {
+    expect(calculateNextReview(0, 2.5, 'partial').nextInterval).toBe(1);
+    const known = calculateNextReview(0, 2.5, 'known');
+    const mastered = calculateNextReview(0, 2.5, 'mastered');
+    expect(known.nextInterval).toBe(3);
+    expect(known.nextReviewDate.toISOString()).toBe('2026-07-19T12:00:00.000Z');
+    expect(mastered.nextInterval).toBe(7);
+    expect(mastered.nextReviewDate.toISOString()).toBe('2026-07-23T12:00:00.000Z');
+    expect(calculateNextReview(1, 2.5, 'known').nextInterval).toBe(3);
 
     const mature = calculateNextReview(6, 2.5, 'mastered');
     expect(mature.nextInterval).toBe(15);
     expect(mature.newEaseFactor).toBe(2.5);
+  });
+
+  it('resets an effortful recall to one day instead of extending a weak card', () => {
+    expect(calculateNextReview(30, 2.5, 'partial').nextInterval).toBe(1);
   });
 
   it('treats an unsupported confidence value as a failed recall', () => {

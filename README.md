@@ -43,12 +43,12 @@ Java Basics • OOP • Collections • Concurrency • JVM Internals • Java 8
 - **Routing**: React Router
 - **Utilities**: date-fns
 - **Delivery**: Cloudflare Pages with an offline-capable service worker
-- **Quality**: Vitest, npm advisory checks, and GitHub Actions on Node 20 and 22
+- **Quality**: Vitest, npm advisory checks, deployment-tool verification, and GitHub Actions on Node 22.12 and 24
 
 ## Getting Started
 
 ### Prerequisites
-- Node.js 20.19+ (Node 22 is the recommended local default)
+- Node.js 22.12+
 - npm 10+
 
 ### Installation
@@ -84,6 +84,7 @@ npm run preview
 npm test
 npm audit --audit-level=high
 npm run build
+npm run check:deploy-tool
 ```
 
 The automated suite exercises the SM-2 scheduling transitions, lapse and history handling, review selection, progress calculations, localization fallbacks, all eight session configurations, and integrity of the 165-card bilingual corpus. Route-level code splitting keeps the initial production bundle below Vite's large-chunk warning threshold, while the card corpus is emitted as a separate cacheable asset.
@@ -148,7 +149,7 @@ public/locales/                      # Translation files (236 UI strings per lan
 4. **Rate Your Confidence**: Select one of 4 confidence levels:
    - 😰 No Idea (review in 10 minutes)
    - 🤔 Partial (review in 1 day)
-   - ✅ Got It (review in 3 days)
+   - ✅ Got It (review in 3+ days)
    - 🔥 Mastered (review in 7+ days)
 
 ### Keyboard Shortcuts
