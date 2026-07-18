@@ -7,6 +7,21 @@ A web application designed to help developers prepare for Java technical intervi
 
 ![JavaMaster Dashboard](docs/screenshot-main.jpg)
 
+## Product proof
+
+The screenshot above and the [live deployment](https://java-flashcards.pages.dev/) are the real application, not a mockup. A fresh browser starts with the complete bilingual card corpus and stores study history locally; no account or seeded user data is required.
+
+| Surface | What to verify in the live app |
+| --- | --- |
+| Dashboard | Eight session modes, cards due, daily goal, streak, level, topic mastery, and spaced-repetition insights |
+| Study session | A focused card flow with answer reveal, four confidence choices, keyboard controls, progress, and completion XP |
+| Browse | Searchable, filterable English and Turkish cards across 15 Java topics |
+| Achievements | Progress-derived milestones rather than hard-coded showcase data |
+| Settings | Language, daily goal, theme, notification, import/export, and local-data controls |
+| Offline path | Installable PWA shell and cached application assets after the first successful load |
+
+Progress begins at zero intentionally. The dashboard becomes populated only through real reviews, so the public demo does not pretend to contain a completed learner history.
+
 ## Overview
 
 **JavaMaster** is a bilingual flashcard app featuring spaced repetition, gamification, and comprehensive Java interview content. Study smarter with adaptive algorithms that optimize your learning schedule.
@@ -29,6 +44,7 @@ Java Basics • OOP • Collections • Concurrency • JVM Internals • Java 8
 - **Status:** Functional portfolio and learning project, deployed on Cloudflare Pages at [java-flashcards.pages.dev](https://java-flashcards.pages.dev/). It is maintained on a best-effort basis without a service-level or support commitment.
 - **License:** This repository currently has no license file. GitHub may permit viewing and forking through its platform terms, but no broader permission is granted to copy, modify, or redistribute the source code or bundled flashcard and translation content.
 - **Content provenance:** The repository history records a single project author, but the flashcards are described as drawing on common Java interview resources and individual source provenance is not documented. Dependencies remain subject to their own licenses, and the learning model is based on the SuperMemo SM-2 method.
+- **Security:** Please use the private reporting path described in [SECURITY.md](SECURITY.md) rather than opening a public issue for a vulnerability.
 
 ## Tech Stack
 
