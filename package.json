@@ -4,7 +4,7 @@
   "description": "Bilingual Java interview flashcards with spaced repetition, offline storage, and progress tracking.",
   "type": "module",
   "engines": {
-    "node": ">=22.12.0",
+    "node": ">=22.22.0",
     "npm": ">=10"
   },
   "scripts": {
@@ -25,10 +25,10 @@
     "i18next-http-backend": "^4.0.0",
     "lucide-react": "^1.25.0",
     "prismjs": "^1.30.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "react-i18next": "^17.0.10",
-    "react-router-dom": "^7.9.4",
+    "react-router": "^8.3.0",
     "recharts": "^3.2.1",
     "zustand": "^5.0.8"
   },

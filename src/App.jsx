@@ -1,5 +1,5 @@
 import { lazy, useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { useFlashcardStore } from './store/useFlashcardStore';
 import { useProgressStore } from './store/useProgressStore';
